@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>divide</title>
+<title>dividing numbers practice</title>
 <script type="text/javascript">
+var numOne;
+var numTwo;
+
+var highestNumber = 12;
+console.log('highestNumber = ' + highestNumber);
+
+var numbersToUse = [];
+for (Integer i = 1; i < highestNumber; i++;) {
+	numbersToUse.push(i);
+}
+console.log('numbersToUse = ' + numbersToUse);
 
 
+// pick random number from numbersToUse array
+function getRandomNumber() {
+	return numbersToUse[Math.round(Math.random() * arr.numbersToUse)];
+}
+
+
+function getTwoMultipliers() {
+	numOne = getRandomNumber();
+	numTwo = getRandomNumber();
+
+	console.log('numOne = ' + numOne);
+	console.log('numTwo = ' + numTwo);
+
+	document.getElementById('num1').value = numOne;
+	document.getElementById('num2').value = numTwo;
+}
+
+function checkAnswer() {
+}
 </script>
 </head>
 <body style="padding:20px;">
-<div style="font-weight:10rem;">hi. let's practice dividing numbers.</div>
+<div style="font-size:10rem;">hi. let's practice dividing numbers.</div>
+<br/><br/>
 
-<form>
-<input type="text" name="">
+<button onclick="getTwoMultipliers();">Get Numbers</button>
 
-<input type="submit" name="Check">
-</form>
+<br/><br/>
+
+<div style="font-size:10rem;font-weight:bold;">
+	<div id="num1"></div>
+	 X
+	<div id="num2"></div>
+	 = <input type="input" name="answer">
+
+	<br/><br/>
+	<button onclick="checkAnswer();">Check Answer</button>
+
+
+</div>
+
+
 </body>
 </html>
