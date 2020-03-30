@@ -34,6 +34,11 @@ function getTwoMultipliers() {
 }
 
 function checkAnswer() {
+	var answer = document.getElementById('answer').value;
+	console.log('answer = ' + answer);
+
+	var correct = numOne * numTwo == answer;
+	console('correct? = ' + correct);
 }
 </script>
 </head>
