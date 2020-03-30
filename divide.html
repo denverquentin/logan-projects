@@ -10,7 +10,7 @@ var highestNumber = 12;
 console.log('highestNumber = ' + highestNumber);
 
 var numbersToUse = [];
-for (var i = 1; i < highestNumber; i++) {
+for (var i = 1; i <= highestNumber; i++) {
 	numbersToUse.push(i);
 }
 console.log('numbersToUse = ' + numbersToUse);
@@ -38,18 +38,15 @@ function checkAnswer() {
 </script>
 </head>
 <body style="padding:20px;">
-<div style="font-size:4rem;">hi. let's practice dividing numbers.</div>
+<div style="font-size:3rem;">hi. let's practice dividing numbers.</div>
 <br/><br/>
 
 <button onclick="getTwoMultipliers();">Get Numbers</button>
 
 <br/><br/>
 
-<div style="font-size:4rem;font-weight:bold;">
-	<span id="num1"></span>
-	 X
-	<span id="num2"></span>
-	 = <input type="input" name="answer">
+<div style="font-size:3rem;font-weight:bold;">
+	<span id="num1"></span> x <span id="num2"></span> = <input type="input" name="answer">
 
 	<br/><br/>
 	<button onclick="checkAnswer();">Check Answer</button>
